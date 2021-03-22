@@ -1,5 +1,5 @@
-# calculator
- A basic calculator.
+# Calculator
+ A simple calculator made in JS.
 
 
-  (https://vittokm.github.io/calculator/)
+  Check it [here](https://vittokm.github.io/calculator/)
