@@ -11,37 +11,37 @@
     <section id="body-area">
         <h1>Calculator</h1>
         <table>
-            <caption id="res"></caption>
+            <caption id="display"></caption>
             <tr>
                 <td id="n7" onclick="delAll(this)">CE</td>
                 <td id="n8" onclick="delAll(this)">C</td>
                 <td id="del" onclick="del(this)"></td>
-                <td id="n9" onclick="cal('%')">%</td>
+                <td id="n9" onclick="oper('%')">%</td>
                 
             </tr>
             <tr>
-                <td id="n7" onclick="pick('7')">7</td>
-                <td id="n8" onclick="pick('8')">8</td>
-                <td id="n9" onclick="pick('9')">9</td>
-                <td id="divi" onclick="calc('/')">/</td>
+                <td id="n7" onclick="displayNum('7')">7</td>
+                <td id="n8" onclick="displayNum('8')">8</td>
+                <td id="n9" onclick="displayNum('9')">9</td>
+                <td id="divi" onclick="oper('/')">/</td>
             </tr>
             <tr>
-                <td id="n4" onclick="pick('4')">4</td>
-                <td id="n5" onclick="pick('5')">5</td>
-                <td id="n6" onclick="pick('6')">6</td>
-                <td id="multi" onclick="calc('x')">x</td>
+                <td id="n4" onclick="displayNum('4')">4</td>
+                <td id="n5" onclick="displayNum('5')">5</td>
+                <td id="n6" onclick="displayNum('6')">6</td>
+                <td id="multi" onclick="oper('*')">x</td>
             </tr>
             <tr>
-                <td id="n1" onclick="pick('1')">1</td>
-                <td id="n2" onclick="pick('2')">2</td>
-                <td id="n3" onclick="pick('3')">3</td>
-                <td id="some" onclick="calc('+')">+</td>
+                <td id="n1" onclick="displayNum('1')">1</td>
+                <td id="n2" onclick="displayNum('2')">2</td>
+                <td id="n3" onclick="displayNum('3')">3</td>
+                <td id="some" onclick="oper('+')">+</td>
             </tr>
             <tr>
-                <td id="n0" onclick="pick('0')">0</td>
-                <td id="dot" onclick="pick('.')">.</td>
-                <td onclick="pick(this)">=</td>
-                <td id="subt" onclick="calc('-')">-</td>
+                <td id="n0" onclick="displayNum('0')">0</td>
+                <td id="dot" onclick="displayNum('.')">.</td>
+                <td onclick="result()">=</td>
+                <td id="subt" onclick="oper('-')">-</td>
             </tr>
         </table>
 
