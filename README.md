@@ -2,4 +2,4 @@
  A simple calculator made in JS.
 
 
-  Check it [here](https://vittokm.github.io/calculator/)
+  Check it [here](https://vitor-afonso.github.io/calculator/)
