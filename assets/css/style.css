@@ -34,7 +34,7 @@ body {
     background-color: #EEE;
 }
 table caption {
-    width: 100%;
+    max-width: 274px;
     display: flex;
     align-items: center;
     padding: 5px;
