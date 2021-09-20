@@ -7,6 +7,7 @@ let display = document.querySelector("#display");
 let operIndex;
 
 
+
 function displayNum(x) {
     if (operator === "=") {
         display.innerHTML = "";
@@ -57,39 +58,39 @@ function result() {
     secondNum = display.innerHTML.slice(operIndex + 1);
     firstNum = parseFloat(firstNum);
     secondNum = parseFloat(secondNum);
-    let res = ""; 
+    let total;
 
     switch (operator) {
 
         
 
-        case "*":
+        case "x":
 
-            res = firstNum * secondNum;
+            total = firstNum * secondNum;
             operator = "=";
             break;
 
         case "+":
 
-            res = firstNum + secondNum;
+            total = firstNum + secondNum;
             operator = "=";
             break;
 
         case "-":
 
-            res = firstNum - secondNum;
+            total = firstNum - secondNum;
             operator = "=";
             break;
 
         case "/":
 
-            res = firstNum / secondNum;
+            total = firstNum / secondNum;
             operator = "=";
             break;
 
         case "%":
 
-            res = firstNum % secondNum;
+            total = firstNum % secondNum;
             operator = "=";
             break;
 
@@ -97,14 +98,22 @@ function result() {
 
         alert('Something went wrong please reload the page.');
         break;
+    }    
+    
+    display.innerHTML = total;
+
+    if (display.innerHTML.length > 12) {
+
+        display.classList.add("longNum");
+
+    } else {
+
+        if (display.classList.contains("longNum")) {
+
+            display.classList.remove("longNum");
+        }
     }
     
-    /*if (display.innerHTML.length > 12) {
-        console.log("here!");
-        display.classList.add("longNum");
-    }*/
-    
-    display.innerHTML = res;
 }
 
 function delAll() {

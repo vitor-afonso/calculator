@@ -66,14 +66,6 @@ table tr td {
 table tr td:last-child {
     margin-right: 0px;
 }
-table tr #del {
-    background-image: url(../images/del.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
 
 .longNum {
     font-size: 2rem;
