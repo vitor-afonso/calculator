@@ -116,14 +116,14 @@ function result() {
     
 }
 
-function delAll() {
+let delAll = () => {
     
     firstNum = "";
     secondNum = "";
     operator = "";
     display.innerHTML = "";
     display.classList.remove("longNum");
-}
+};
 
 function delLast() {
 
